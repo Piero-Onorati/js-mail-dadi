@@ -1,17 +1,17 @@
 /* Gioco dei dadi: generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto. */
 
 var player = Math.floor(Math.random()*6) + 1;
-console.log(player);
+document.getElementById('player-number').innerHTML = player;
 
 var computer = Math.floor(Math.random()*6) + 1;
-console.log(computer);
+document.getElementById('computer-number').innerHTML = computer;
 
-var result = 'player wins';
+var result = 'both win';
 
 if (player < computer) {
-    result = 'computers wins';    
-} else if (player == computer) {
-    result = 'both win';
+    result = 'computers wins';
+    document.getElementById('computer-result').innerHTML = result;    
+} else if (player > computer) {
+    result = 'player wins';
+    document.getElementById('player-result').innerHTML = result;
 } 
-
-console.log(result);
