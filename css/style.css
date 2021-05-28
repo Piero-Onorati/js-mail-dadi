@@ -14,7 +14,7 @@ body{
 
 .container{
     width: 60%;
-    margin: 100px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,15 +25,21 @@ body{
 
 h1{
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
     font-size: 60px;
     text-transform: uppercase;
     color: lightslategray;
 }
 
 h2{
-    padding:10px;
+    padding-bottom:10px;
     color: grey;
+}
+
+.player-side h3, .computer-side h3{
+    font-family: 'Open Sans', sans-serif;
+    height: 100px;
+    margin-top: 50px;
 }
 
 span{
@@ -64,11 +70,6 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.player-side h3, .computer-side h3{
-    height: 100px;
-    margin-top: 70px;
 }
 
 .player-dice, .computer-dice{
