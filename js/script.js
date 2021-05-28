@@ -9,7 +9,7 @@ document.getElementById('computer-number').innerHTML = computer;
 var result = 'both win';
 
 if (player < computer) {
-    result = 'computers wins';
+    result = 'computer wins';
     document.getElementById('computer-result').innerHTML = result;    
 } else if (player > computer) {
     result = 'player wins';
