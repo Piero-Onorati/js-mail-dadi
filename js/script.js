@@ -14,4 +14,4 @@ if (player < computer) {
 } else if (player > computer) {
     result = 'player wins';
     document.getElementById('player-result').innerHTML = result;
-} 
+}
